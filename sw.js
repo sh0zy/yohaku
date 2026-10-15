@@ -3,10 +3,10 @@
 // ・画面（HTML）は通信を優先し、つながらないときは保存したものを使う
 // ・新しい版はすぐには切り替えず、画面の「更新」操作（SKIP_WAITING）で切り替える
 // ・課題データ（IndexedDB）には触れない。外部への通信もしない
-const VERSION = '1.0.0-mv9bpf6b'
+const VERSION = '1.0.0-mv9c0nba'
 const CACHE = `yohaku-${VERSION}`
 const FONT_CACHE = 'yohaku-fonts'
-const PRECACHE = ["./","./assets/index-DnaBBQYa.js","./assets/index-DBUPH0W8.css","./manifest.webmanifest","./icon.svg","./icon-192.png","./icon-512.png"]
+const PRECACHE = ["./","./assets/index-B_e3WJKS.js","./assets/index-DBUPH0W8.css","./manifest.webmanifest","./icon.svg","./icon-192.png","./icon-512.png"]
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((c) => c.addAll(PRECACHE)))
